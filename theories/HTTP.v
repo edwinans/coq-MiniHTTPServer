@@ -5,6 +5,8 @@ From CoqFFI Require Import String.
 
 Import MonadLetNotation.
 
+#[local] Existing Instance Monad_stateT.
+
 Inductive request :=
 | Get (resource : uri).
 

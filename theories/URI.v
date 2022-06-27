@@ -9,6 +9,8 @@ Import MonadLetNotation.
 Import ApplicativeNotation.
 Import ListNotations.
 
+#[local] Existing Instance Monad_stateT.
+
 Inductive directory_id : Type :=
 | Dirname (s : Slice.t)
 | Current
